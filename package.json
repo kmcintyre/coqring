@@ -1,0 +1,27 @@
+{
+  "license": "(ISC OR GPL-3.0)",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^3.0.5",
+    "@openzeppelin/contracts": "^5.0.1",
+    "@types/node": "20.8.2",
+    "@types/react": "18.2.45",
+    "concurrently": "^8.2.2",
+    "ethers": "^6.9.1",
+    "hardhat": "^2.19.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "scripts": {
+    "dev": "concurrently \"next dev\" \"npx hardhat node\"",
+    "deploy": "npx hardhat run scripts/deploy.ts",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "next": "^14.0.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
